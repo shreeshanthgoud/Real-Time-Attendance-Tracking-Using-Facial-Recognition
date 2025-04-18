@@ -77,7 +77,7 @@ Red box around face
 
 Snapshot saved to unknown_snapshots/unknown_YYYYMMDD_HHMMSS.jpg
 
-##🧠 Future Enhancements
+#🧠 Future Enhancements
 Train KNN model dynamically from the UI.
 
 Add face re-registration module.
