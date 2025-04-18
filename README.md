@@ -31,7 +31,7 @@ A real-time attendance tracking system using facial recognition, powered by **Fa
 
 ## 📁 Project Structure
 
-📌 How to Use
+##📌 How to Use
 Prepare Dataset
 
 Organize person images in folders labeled with person IDs (e.g., 001, 002, etc.).
@@ -60,7 +60,7 @@ Unknown Detection
 Unknown individuals are logged with a red bounding box.
 
 A snapshot is saved inside the unknown_snapshots/ folder with timestamp in filename.
-📷 Sample Output
+##📷 Sample Output
 Known Face Detection:
 
 Green box around face
@@ -77,7 +77,7 @@ Red box around face
 
 Snapshot saved to unknown_snapshots/unknown_YYYYMMDD_HHMMSS.jpg
 
-🧠 Future Enhancements
+##🧠 Future Enhancements
 Train KNN model dynamically from the UI.
 
 Add face re-registration module.
@@ -88,10 +88,10 @@ Email alerts for unknown detections.
 
 Support for multiple camera sources.
 
-📄 License
+##📄 License
 This project is open-source and free to use for educational and research purposes.
 
-🤝 Acknowledgements
+##🤝 Acknowledgements
 FaceNet by Keras-Facenet
 
 OpenCV for real-time video capture
