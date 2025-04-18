@@ -13,7 +13,7 @@ A real-time attendance tracking system using facial recognition, powered by **Fa
 - 🧠 **Face stabilization logic** to avoid flickers.
 - 🧾 **Attendance logging** in a structured CSV file.
 - ❌ **Unknown face detection** with red bounding box and snapshot saving.
-- 🖥️ GUI-based control to start/stop camera via **Tkinter**.
+- 🖥️ **GUI-based control** to start/stop camera via **Tkinter**.
 
 ---
 
@@ -29,74 +29,71 @@ A real-time attendance tracking system using facial recognition, powered by **Fa
 
 ---
 
-## 📁 Project Structure
+## 📌 How to Use
 
-##📌 How to Use
-Prepare Dataset
+### 1. Prepare Dataset
+- Organize person images in folders labeled with person IDs (e.g., `001`, `002`, etc.).
+- Each folder should contain **6–7 facial images** with varied expressions and angles.
 
-Organize person images in folders labeled with person IDs (e.g., 001, 002, etc.).
+### 2. Train Model
+- Train and save the **KNN model** (`knn_model.pkl`) and **label encoder** (`label_encoder.pkl`) using **FaceNet embeddings**.
 
-Each folder should contain 6–7 facial images with varied expressions.
+### 3. Update Attendance File
+- Ensure `Attendance.csv` has the following columns:
 
-Train and save the KNN model (knn_model.pkl) and label encoder (label_encoder.pkl) using FaceNet embeddings.
+### 4. Control Camera
+- Run the script.
+- A **simple GUI** opens with a **"Stop Camera"** button to terminate the session.
 
-Update Attendance File
+### 5. View Reports
+- After stopping the camera, a file named `Attendance_Report.csv` is saved with:
 
-Ensure Attendance.csv has the following columns:
+### 6. Unknown Detection
+- Unknown individuals:
+- Are displayed with a **red bounding box**.
+- Are labeled as **“Unknown”**.
+- Have their snapshot saved to `unknown_snapshots/` with a timestamped filename.
 
-Person ID,Name,Roll No,Department
+---
 
-Control Camera
+## 📷 Sample Output
 
-A simple GUI opens with a Stop Camera button to terminate the session.
+### ✅ Known Face Detection:
+- Green bounding box
+- Name label displayed
+- Attendance marked automatically
 
-View Reports
+### ❌ Unknown Face Detection:
+- Red bounding box
+- “Unknown” label
+- Snapshot saved to `unknown_snapshots/unknown_YYYYMMDD_HHMMSS.jpg`
 
-After stopping the camera, the script saves a file named Attendance_Report.csv with the following columns:
-Name, Roll No, Department, Entry Time, Exit Time
+---
 
-Unknown Detection
+## 🧠 Future Enhancements
 
-Unknown individuals are logged with a red bounding box.
+- Dynamic KNN training from the UI.
+- Face re-registration module.
+- Integration with databases (MySQL, Firebase).
+- Email alerts for unknown detections.
+- Multi-camera support.
 
-A snapshot is saved inside the unknown_snapshots/ folder with timestamp in filename.
-##📷 Sample Output
-Known Face Detection:
+---
 
-Green box around face
+## 📄 License
 
-Name label displayed
+This project is **open-source** and free to use for **educational and research purposes**.
 
-Attendance marked automatically
+---
 
-Unknown Face Detection:
+## 🤝 Acknowledgements
 
-Red box around face
+- [FaceNet](https://pypi.org/project/keras-facenet/) by Keras-Facenet
+- [OpenCV](https://opencv.org/) for real-time video capture
+- Inspiration from practical AI applications in **smart surveillance** and **biometric systems**
 
-“Unknown” label
+---
 
-Snapshot saved to unknown_snapshots/unknown_YYYYMMDD_HHMMSS.jpg
+## 👤 Author
 
-#🧠 Future Enhancements
-Train KNN model dynamically from the UI.
-
-Add face re-registration module.
-
-Integrate with databases (MySQL, Firebase).
-
-Email alerts for unknown detections.
-
-Support for multiple camera sources.
-
-##📄 License
-This project is open-source and free to use for educational and research purposes.
-
-##🤝 Acknowledgements
-FaceNet by Keras-Facenet
-
-OpenCV for real-time video capture
-
-Inspiration from practical AI applications in smart surveillance and biometric systems.
-
-👤 Author
-KOYYADA SHREESHANTH
+**KOYYADA SHREESHANTH**
