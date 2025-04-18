@@ -94,6 +94,11 @@ This project is **open-source** and free to use for **educational and research p
 
 ---
 
-## 👤 Author
+## 👤 Contributors
 
-**KOYYADA SHREESHANTH**
+- [Koyyada Shreesanth](https://www.linkedin.com/in/koyyada-shreeshanth-a17414285/)
+- [Dogga Pavan Sekhar](https://www.linkedin.com/in/dogga-pavan-sekhar-006a83252/)
+ 
+---
+
+Feel free to contact `shreeshanthgoud@gmail.com`, `doggapavansekhar@gmail.com`
